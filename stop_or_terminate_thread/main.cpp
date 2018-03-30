@@ -26,7 +26,7 @@ void stoppingThreadUsingFuture()
     std::future<void> futureObj = exitSignal.get_future();
 
     //Starting the thread & move the future object in lambda function by reference
-    std::thread threadObj(&threadFunction, std::move(futureObj));
+    std::thread threadObj(threadFunction, std::move(futureObj));
 
     //Wait for 10 sec
     std::this_thread::sleep_for(std::chrono::seconds(10));

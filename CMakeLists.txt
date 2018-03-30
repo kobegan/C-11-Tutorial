@@ -15,3 +15,5 @@
  ADD_SUBDIRECTORY(smart_pointer)
  ADD_SUBDIRECTORY(std_array)
  ADD_SUBDIRECTORY(variadic_templates)
+ ADD_SUBDIRECTORY(rvalue_reference)
+ ADD_SUBDIRECTORY(callbacks)
